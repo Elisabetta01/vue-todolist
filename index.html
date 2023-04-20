@@ -17,8 +17,12 @@
           
                <div class="bg-primary-subtle rounded-3 p-2">
                     
-                    <div class="border-bottom border-info d-flex justify-content-between align-items-center">
-                         <p class="m-0">Fare i compiti</p>
+                    <div v-for="(element, index) in todos" :key="index"
+                    class="border-bottom border-info d-flex justify-content-between align-items-center">
+                         <p class="m-2"
+                         :class="(element.done == true) ? 'text-decoration-line-through' : '' "
+                         >{{element.text}}
+                         </p>
                          <i class="fa-solid fa-xmark"></i>
                     </div>
                </div>
