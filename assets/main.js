@@ -37,8 +37,15 @@ createApp({
                     text: 'Fare il bucato',
                     done: false
                }
-          ]
+          ],
         
      }
+    },
+
+    methods: {
+     cancellaTodo(i){
+          this.todos.splice( i, 1 )
+     }
+  
     }
 }).mount('#app')

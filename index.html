@@ -23,7 +23,7 @@
                          :class="(element.done == true) ? 'text-decoration-line-through' : '' "
                          >{{element.text}}
                          </p>
-                         <i class="fa-solid fa-xmark"></i>
+                         <i class="fa-solid fa-xmark" @click="cancellaTodo(index)"></i>
                     </div>
                </div>
           
