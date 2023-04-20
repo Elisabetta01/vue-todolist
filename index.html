@@ -16,7 +16,7 @@
                <h1 class="text-danger">To Do List</h1>
           
                <div class="m-2">
-                    <input type="text" placeholder="Aggiungi ToDo" v-model="testoInput" >
+                    <input type="text" placeholder="Aggiungi ToDo" v-model="testoInput" @KeyUp.enter="creaTodo">
                     <button @click="creaTodo">Aggiungi</button>
                </div>
 
