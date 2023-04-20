@@ -15,6 +15,11 @@
           <div class="container text-center">
                <h1 class="text-danger">To Do List</h1>
           
+               <div class="m-2">
+                    <input type="text" placeholder="Aggiungi ToDo" v-model="testoInput" >
+                    <button @click="creaTodo">Aggiungi</button>
+               </div>
+
                <div class="bg-primary-subtle rounded-3 p-2">
                     
                     <div v-for="(element, index) in todos" :key="index"
@@ -25,6 +30,7 @@
                          </p>
                          <i class="fa-solid fa-xmark" @click="cancellaTodo(index)"></i>
                     </div>
+
                </div>
           
           </div>
