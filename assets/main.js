@@ -60,6 +60,14 @@ createApp({
                })
                this.testoInput = ''
           }
+     },
+
+     fatto(i){
+          if(this.todos[i].done == false){
+               this.todos[i].done = true
+          }else {
+               this.todos[i].done = false
+          }
      }
 
     }
